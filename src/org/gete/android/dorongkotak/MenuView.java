@@ -22,7 +22,8 @@ public class MenuView extends Activity {
 	}
 	
 	public void tampilGame(View view) {
-		
+		mIntent = new Intent(MenuView.this, GameView.class);
+		startActivity(mIntent);
 	}
 	
 	public void tampilKredit(View view) {

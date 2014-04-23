@@ -1,27 +1,18 @@
 package org.gete.android.dorongkotak;
 
-import android.content.Context;
-import android.graphics.Canvas;
-import android.util.AttributeSet;
-import android.view.View;
+import android.app.Activity;
+import android.os.Bundle;
 
-public class GameView extends View {
-
-	public GameView(Context context) {
-		super(context);
-	}
-
-	public GameView(Context context, AttributeSet attrs) {
-		super(context, attrs);
-	}
-
-	public GameView(Context context, AttributeSet attrs, int defStyle) {
-		super(context, attrs, defStyle);
+public class GameView extends Activity {
+	
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.game_view);
 	}
 	
 	@Override
-	public void onDraw(Canvas canvas) {
-		
+	public void onBackPressed() {
+		GameView.this.finish();
 	}
-
 }

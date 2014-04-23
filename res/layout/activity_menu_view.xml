@@ -5,16 +5,6 @@
     android:layout_height="match_parent" >
 
     <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:contentDescription="@string/gambarmenu"
-        android:scaleType="fitXY"
-        android:src="@drawable/gothicforest" />
-
-    <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,5 +47,16 @@
         android:contentDescription="@string/gambarmenu"
         android:onClick="keluar"
         android:src="@drawable/exit" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/imageView3"
+        android:contentDescription="@string/gambarmenu"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
 
 </RelativeLayout>

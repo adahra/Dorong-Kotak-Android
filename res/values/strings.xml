@@ -16,6 +16,10 @@
     <string name="retry_level">Retry Level</string>
     <string name="skip_level">Skip Level</string>
     <string name="win_level">Win!</string>
+    <string name="angka_satu"/>
+    <string name="operator"/>
+    <string name="angka_dua"/>
+    <string name="angka_jawaban"/>
     
 
 </resources>
