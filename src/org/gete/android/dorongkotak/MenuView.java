@@ -22,7 +22,7 @@ public class MenuView extends Activity {
 	}
 	
 	public void tampilGame(View view) {
-		mIntent = new Intent(MenuView.this, GameView.class);
+		mIntent = new Intent(MenuView.this, MainActivity.class);
 		startActivity(mIntent);
 	}
 	

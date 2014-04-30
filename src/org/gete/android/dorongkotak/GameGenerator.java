@@ -45,7 +45,7 @@ public class GameGenerator {
 		touchHandler.add(new TouchBox(RIGHT, buttonOriginX + buttonW * 2, buttonOriginY + buttonH, buttonW, buttonH));
 		touchHandler.add(new TouchBox(UP, buttonOriginX + buttonW, buttonOriginY, buttonW, buttonH));
 		touchHandler.add(new TouchBox(DOWN, buttonOriginX + buttonW, buttonOriginY + buttonH * 2, buttonW, buttonH));
-		touchHandler.add(new TouchBox(WAIT, buttonOriginX, + buttonW, buttonOriginY + buttonH, buttonW, buttonH));
+		touchHandler.add(new TouchBox(WAIT, buttonOriginX + buttonW, buttonOriginY + buttonH, buttonW, buttonH));
 		touchHandler.add(new TouchBox(UPLEFT, buttonOriginX, buttonOriginY, buttonW, buttonH));
 		touchHandler.add(new TouchBox(UPRIGHT, buttonOriginX + buttonW * 2, buttonOriginY, buttonW, buttonH));
 		touchHandler.add(new TouchBox(DOWNLEFT, buttonOriginX, buttonOriginY + buttonH * 2, buttonW, buttonH));

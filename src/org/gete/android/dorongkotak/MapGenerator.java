@@ -75,9 +75,9 @@ public class MapGenerator {
 					}
 				}
 			}
-			
-			return tileLayer;
 		}
+		
+		return tileLayer;
 	}
 	
 	public TileLayer makeRoom(TileLayer data, TileChar floor, TileMap.MonsterSpawnData spawn) {
@@ -118,7 +118,7 @@ public class MapGenerator {
 			makeRoom(data, floor, TileMap.MonsterSpawnData.EASY_MONSTER);
 		}
 		
-		gameGenerator.getTileScreen().LoadMap(tileMap);
+		gameGenerator.getTileScreen().loadMap(tileMap);
 	}
 
 }

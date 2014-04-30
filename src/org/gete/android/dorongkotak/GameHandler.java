@@ -7,8 +7,8 @@ public class GameHandler {
 	private Monster player;
 	
 	public GameHandler(GameGenerator gameGenerator) {
-		this.gameGenerator = gameGenerator;
-		touchHandler = gameGenerator.getTouchhandler();
+		this.setGameGenerator(gameGenerator);
+		setTouchHandler(gameGenerator.getTouchHandler());
 		monsterHandler = gameGenerator.getMonsterHandler();
 		player = gameGenerator.getPlayer();
 	}
@@ -26,6 +26,22 @@ public class GameHandler {
 	
 	public void handleNewMonster(Monster monster, Dot dot) {
 		monsterHandler.handleNewMonster(monster, dot);
+	}
+
+	public TouchHandler getTouchHandler() {
+		return touchHandler;
+	}
+
+	public void setTouchHandler(TouchHandler touchHandler) {
+		this.touchHandler = touchHandler;
+	}
+
+	public GameGenerator getGameGenerator() {
+		return gameGenerator;
+	}
+
+	public void setGameGenerator(GameGenerator gameGenerator) {
+		this.gameGenerator = gameGenerator;
 	}
 
 }

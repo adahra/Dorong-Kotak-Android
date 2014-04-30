@@ -1,5 +1,7 @@
 package org.gete.android.dorongkotak;
 
+import org.gete.android.dorongkotak.TileCharset.CharColor;
+
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

@@ -1,5 +1,7 @@
 package org.gete.android.dorongkotak;
 
+import org.gete.android.dorongkotak.MonsterDatabase.MonsterData;
+import org.gete.android.dorongkotak.MonsterDatabase.MonsterStat;
 import org.gete.android.dorongkotak.TileMap.PassableLayer;
 
 public class Monster {
@@ -16,7 +18,7 @@ public class Monster {
 		tcTileChar = tileChar;
 		this.coordinate = null;
 		this.gameGenerator = gameGenerator;
-		this.name = name;
+		this.setName(name);
 		tileScreen = gameGenerator.getTileScreen();
 		monsterHandler = this.gameGenerator.getMonsterHandler();
 		monsterHandler.handleNewMonster(this, coordinates);
@@ -90,6 +92,14 @@ public class Monster {
 	
 	public boolean moveBy(Dot dot) {
 		return moveTo(coordinate.add(dot));
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }
