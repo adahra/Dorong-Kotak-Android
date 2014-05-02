@@ -33,9 +33,11 @@
 
     </TableRow>
     
-    <org.gete.android.dorongkotak.PenampilArena
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-    />
+    <org.gete.android.dorongkotak.DrawingPanel
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawingPanel1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:soundEffectsEnabled="true"/>
 
 </LinearLayout>

@@ -262,7 +262,7 @@ int id action_context_bar 0x7f06001d
 int id action_menu_divider 0x7f060016
 int id action_menu_presenter 0x7f060017
 int id action_mode_close_button 0x7f060024
-int id action_settings 0x7f060047
+int id action_settings 0x7f060048
 int id activity_chooser_view_content 0x7f060025
 int id always 0x7f06000b
 int id beginning 0x7f060011
@@ -272,6 +272,7 @@ int id container 0x7f06003c
 int id default_activity_button 0x7f060028
 int id dialog 0x7f06000e
 int id disableHome 0x7f060008
+int id drawingPanel1 0x7f060047
 int id dropdown 0x7f06000f
 int id edit_query 0x7f060030
 int id end 0x7f060013

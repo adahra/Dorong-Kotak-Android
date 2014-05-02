@@ -8,7 +8,7 @@ public class GameView extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.game_view);
+		setContentView(new DrawingPanel(this));
 	}
 	
 	@Override
