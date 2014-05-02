@@ -343,7 +343,8 @@ int layout support_simple_spinner_dropdown_item 0x7f03001b
 int menu credit_view 0x7f0d0000
 int menu menu_view 0x7f0d0001
 int raw gamemap 0x7f050000
-int raw menuscreenmusic 0x7f050001
+int raw image 0x7f050001
+int raw menuscreenmusic 0x7f050002
 int string abc_action_bar_home_description 0x7f0b0001
 int string abc_action_bar_up_description 0x7f0b0002
 int string abc_action_menu_overflow_description 0x7f0b0003
