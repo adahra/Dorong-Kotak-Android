@@ -983,17 +983,29 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int back=0x7f020057;
-        public static final int credits=0x7f020058;
-        public static final int empty=0x7f020059;
-        public static final int exit=0x7f02005a;
-        public static final int floor=0x7f02005b;
-        public static final int gothicforest=0x7f02005c;
-        public static final int ic_launcher=0x7f02005d;
-        public static final int options=0x7f02005e;
-        public static final int playgame=0x7f02005f;
-        public static final int splash=0x7f020060;
-        public static final int titlepict=0x7f020061;
+        public static final int actor_back=0x7f020057;
+        public static final int actor_front=0x7f020058;
+        public static final int actor_left=0x7f020059;
+        public static final int actor_right=0x7f02005a;
+        public static final int back=0x7f02005b;
+        public static final int crate=0x7f02005c;
+        public static final int credits=0x7f02005d;
+        public static final int empty=0x7f02005e;
+        public static final int exit=0x7f02005f;
+        public static final int floor=0x7f020060;
+        public static final int gothic_forest=0x7f020061;
+        public static final int gothicforest=0x7f020062;
+        public static final int ic_launcher=0x7f020063;
+        public static final int options=0x7f020064;
+        public static final int playgame=0x7f020065;
+        public static final int splash=0x7f020066;
+        public static final int titlepict=0x7f020067;
+        public static final int wall=0x7f020068;
+        public static final int wall_corner_left=0x7f020069;
+        public static final int wall_corner_right=0x7f02006a;
+        public static final int wall_left_floor=0x7f02006b;
+        public static final int wall_right_floor=0x7f02006c;
+        public static final int wooden_hole=0x7f02006d;
     }
     public static final class id {
         public static final int action_bar=0x7f06001c;
@@ -1129,9 +1141,7 @@ containing a value of this type.
         public static final int menu_view=0x7f0d0001;
     }
     public static final class raw {
-        public static final int gamemap=0x7f050000;
-        public static final int image=0x7f050001;
-        public static final int menuscreenmusic=0x7f050002;
+        public static final int menuscreenmusic=0x7f050000;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
