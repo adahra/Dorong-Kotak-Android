@@ -139,7 +139,7 @@ public class GameScreen extends Screen {
 	private void drawReadyUI() {
 		Graphics g = game.getGraphics();
 		g.drawARGB(155, 0, 0, 0);
-		g.drawString("Tap layar untuk bergerak di arah itu", 640, 300, paint);
+		g.drawString("Tap layar untuk bergerak di arah itu", 250, 250, paint);
 	}
 	
 	private void drawRunningUI() {
