@@ -5,11 +5,13 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Process;
+import android.util.Log;
 import android.view.View;
 
 public class MenuView extends Activity {
 	private MediaPlayer mBackgroundMusic;
 	private Intent mIntent;
+	private static String TAG = "MenuView";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,7 @@ public class MenuView extends Activity {
 		mBackgroundMusic.setLooping(true);
 		mBackgroundMusic.setVolume(1, 1);
 		mBackgroundMusic.start();
+		Log.d(TAG, "onCreate(savedInstanceState");
 	}
 	
 	public void tampilGame(View view) {
