@@ -20,7 +20,8 @@ public class DrawingPanel extends SurfaceView implements SurfaceHolder.Callback 
 	private Bitmap wallLeftFloor;
 	private Bitmap wallRightFloor;
 	private Paint paint;
-	private static int batas = 32;
+	private static int batas = 64;
+	private static String TAG = "DrawingPanel";
 	private int[][] gambarPeta = new int[][] {
 			{1, 2, 2, 2, 2, 2, 2, 2, 2, 3},
 			{4, 5, 5, 5, 5, 5, 5, 5, 5, 6},
@@ -94,10 +95,16 @@ public class DrawingPanel extends SurfaceView implements SurfaceHolder.Callback 
 
 	@Override
 	public void surfaceCreated(SurfaceHolder holder) {
-		// setWillNotDraw(false;
 		panelThread = new PanelThread(getHolder(), this);
-		panelThread.setRunning(true);
-		panelThread.start();
+		try {
+			panelThread.setRunning(true);
+			panelThread.start();
+		} catch (Exception ie) {
+			Log.e(TAG, "Terjadi Kesalahan: " + ie.getMessage());
+		}
+		
+		Log.d(TAG, "surfaceCreated(holder)");
+		
 	}
 
 	@Override
@@ -111,8 +118,8 @@ public class DrawingPanel extends SurfaceView implements SurfaceHolder.Callback 
 			panelThread.setRunning(false);
 			panelThread.join();
 		} catch (InterruptedException ie) {
-			Log.e("surfaceDestroyed(holder)", ie.getMessage());
+			Log.e(TAG, "Terjadi kesalahan: " + ie.getMessage());
 		}
 	}
-
+	
 }
