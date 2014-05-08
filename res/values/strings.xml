@@ -8,7 +8,7 @@
     <string name="title_activity_credit_view">CreditView</string>
     <string name="credit_text">Credits</string>
     <string name="gete">Genius Team</string>
-    <string name="credit">Dorong Kotak\n\nOriginal Sound\nfreesound.org\n\nOriginal Image\nopenclipart.org\n\nThank To\nAll my friend\nAll my lecture</string>
+    <string name="credit">Dorong Kotak\n\nOriginal Sound\nfreesound.org\n\nOriginal Image\nopenclipart.org\nopengameart.org\n\nThank To\nAll my friend\nAll my lecture</string>
     <string name="new_game">New Game</string>
     <string name="continue_game">Continue</string>
     <string name="level_select">Level Select</string>
