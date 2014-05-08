@@ -11,6 +11,7 @@ public class PanelThread extends Thread {
 	private DrawingPanel drawingPanel;
 	private boolean run = false;
 	private Canvas canvas;
+	private static String TAG = "PanelThread";
 	
 	public PanelThread(SurfaceHolder surfaceHolder, DrawingPanel drawingPanel) {
 		this.surfaceHolder = surfaceHolder;
@@ -29,11 +30,10 @@ public class PanelThread extends Thread {
 			try {
 				canvas = this.surfaceHolder.lockCanvas(null);
 				synchronized (this.surfaceHolder) {
-					// postInvalidate();
 					drawingPanel.draw(canvas);
 				}
 			} catch (Exception e) {
-				Log.e("run()", e.getMessage());
+				Log.d(TAG, "run() is " + e.getMessage());
 			} finally {
 				if (canvas != null) {
 					this.surfaceHolder.unlockCanvasAndPost(canvas);
