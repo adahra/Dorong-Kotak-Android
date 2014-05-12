@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dorong Kotak</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="gambarmenu"></string>
+    <string name="title_activity_credit_view">CreditView</string>
+    <string name="credit_text">Credits</string>
+    <string name="gete">Genius Team</string>
+    <string name="credit">Dorong Kotak\n\nOriginal Sound\nfreesound.org\n\nOriginal Image\nopenclipart.org\nopengameart.org\n\nThank To\nAll my friend\nAll my lecture</string>
+    <string name="new_game">New Game</string>
+    <string name="continue_game">Continue</string>
+    <string name="level_select">Level Select</string>
+    <string name="high_scores">High Scores</string>
+    <string name="retry_level">Retry Level</string>
+    <string name="skip_level">Skip Level</string>
+    <string name="win_level">Win!</string>
+    <string name="angka_satu"/>
+    <string name="operator"/>
+    <string name="angka_dua"/>
+    <string name="angka_jawaban"/>
+    
+
+</resources>
