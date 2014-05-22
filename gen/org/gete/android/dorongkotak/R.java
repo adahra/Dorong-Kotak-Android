@@ -894,6 +894,7 @@ containing a value of this type.
          */
         public static final int activity_horizontal_margin=0x7f090011;
         public static final int activity_vertical_margin=0x7f090012;
+        public static final int ui_text_size=0x7f090013;
     }
     public static final class drawable {
         public static final int abc_ab_bottom_solid_dark_holo=0x7f020000;
@@ -1000,21 +1001,37 @@ containing a value of this type.
         public static final int button_tentang_hover=0x7f020065;
         public static final int button_tentang_normal=0x7f020066;
         public static final int button_tentang_pressed=0x7f020067;
-        public static final int crate=0x7f020068;
-        public static final int dorong_kotak_title=0x7f020069;
-        public static final int floor=0x7f02006a;
-        public static final int ic_launcher=0x7f02006b;
-        public static final int sel_but_keluar=0x7f02006c;
-        public static final int sel_but_kembali=0x7f02006d;
-        public static final int sel_but_mulai=0x7f02006e;
-        public static final int sel_but_tentang=0x7f02006f;
-        public static final int splash=0x7f020070;
-        public static final int wall=0x7f020071;
-        public static final int wall_corner_left=0x7f020072;
-        public static final int wall_corner_right=0x7f020073;
-        public static final int wall_left_floor=0x7f020074;
-        public static final int wall_right_floor=0x7f020075;
-        public static final int wooden_hole=0x7f020076;
+        public static final int canvas_bg_01=0x7f020068;
+        public static final int crate=0x7f020069;
+        public static final int ctrl_down_arrow=0x7f02006a;
+        public static final int ctrl_left_arrow=0x7f02006b;
+        public static final int ctrl_right_arrow=0x7f02006c;
+        public static final int ctrl_up_arrow=0x7f02006d;
+        public static final int dorong_kotak_title=0x7f02006e;
+        public static final int floor=0x7f02006f;
+        public static final int ic_launcher=0x7f020070;
+        public static final int icon=0x7f020071;
+        public static final int player_unit=0x7f020072;
+        public static final int sel_but_keluar=0x7f020073;
+        public static final int sel_but_kembali=0x7f020074;
+        public static final int sel_but_mulai=0x7f020075;
+        public static final int sel_but_tentang=0x7f020076;
+        public static final int splash=0x7f020077;
+        public static final int tile_01=0x7f020078;
+        public static final int tile_02=0x7f020079;
+        public static final int tile_03=0x7f02007a;
+        public static final int tile_04=0x7f02007b;
+        public static final int tile_05=0x7f02007c;
+        public static final int tile_06=0x7f02007d;
+        public static final int tile_07=0x7f02007e;
+        public static final int tile_danger_01=0x7f02007f;
+        public static final int tile_exit=0x7f020080;
+        public static final int wall=0x7f020081;
+        public static final int wall_corner_left=0x7f020082;
+        public static final int wall_corner_right=0x7f020083;
+        public static final int wall_left_floor=0x7f020084;
+        public static final int wall_right_floor=0x7f020085;
+        public static final int wooden_hole=0x7f020086;
     }
     public static final class id {
         public static final int action_bar=0x7f06001c;
