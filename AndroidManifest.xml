@@ -8,6 +8,15 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
+    <uses-feature android:name="android.hardware.touchscreen" />
+    
+    <supports-screens
+		android:largeScreens="true"
+		android:normalScreens="true"
+		android:smallScreens="false"
+		android:resizeable="false"
+		android:anyDensity="true"
+	/>
 
     <application
         android:allowBackup="true"
@@ -19,20 +28,13 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="MenuView" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:icon="@drawable/ic_launcher" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true">
-            <intent-filter>
-                <category android:name="android.intent.category.OPENABLE"/>
-            </intent-filter>
+        <activity android:name=".MenuView" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:icon="@drawable/ic_launcher" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true">
         </activity>
-        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="CreditView" android:icon="@drawable/ic_launcher" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true">
-            <intent-filter>
-                <category android:name="android.intent.category.OPENABLE"/>
-            </intent-filter>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name=".CreditView" android:icon="@drawable/ic_launcher" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true">
         </activity>
-        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="GameView" android:icon="@drawable/ic_launcher" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true">
-            <intent-filter>
-                <category android:name="android.intent.category.OPENABLE"/>
-            </intent-filter>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name=".GameView" android:icon="@drawable/ic_launcher" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true">
+        </activity>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name=".Play" android:icon="@drawable/ic_launcher" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true">
         </activity>
     </application>
 
