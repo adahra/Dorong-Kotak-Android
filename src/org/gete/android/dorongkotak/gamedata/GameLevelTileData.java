@@ -15,8 +15,7 @@ import android.database.sqlite.SQLiteDatabase;
  * @author Dan Ruscoe (ruscoe.org)
  * @version 1.0
  */
-public class GameLevelTileData extends GameDAO
-{
+public class GameLevelTileData extends GameDAO {
 	public static final String TABLE_NAME = "gameLevelTileData";
 
 	public static final String STAGE = "stage";
@@ -34,8 +33,7 @@ public class GameLevelTileData extends GameDAO
 
 	public static final String TILE_DATA_LINE_BREAK = "//";
 
-	public GameLevelTileData(Context ctx)
-	{
+	public GameLevelTileData(Context ctx) {
 		super(ctx);
 	}
 
@@ -45,8 +43,7 @@ public class GameLevelTileData extends GameDAO
 	 * @param level - The game level, relative to the stage.
 	 * @return ArrayList
 	 */
-	public ArrayList<String> getGameLevelData(int stage, int level)
-	{
+	public ArrayList<String> getGameLevelData(int stage, int level) {
     	SQLiteDatabase db = this.getReadableDatabase();
     	
     	String[] from = { _ID, STAGE, LEVEL, PLAYER_START_TILE_X, PLAYER_START_TILE_Y, TILE_DATA };
@@ -56,10 +53,8 @@ public class GameLevelTileData extends GameDAO
     	
     	ArrayList<String> levelData = new ArrayList<String>();
     	
-    	if (cursor != null)
-    	{
-    		while (cursor.moveToNext())
-        	{
+    	if (cursor != null) {
+    		while (cursor.moveToNext()) {
     			levelData.add(cursor.getString(FIELD_ID_ID));
     			levelData.add(cursor.getString(FIELD_ID_STAGE));
     			levelData.add(cursor.getString(FIELD_ID_LEVEL));
@@ -67,6 +62,7 @@ public class GameLevelTileData extends GameDAO
     			levelData.add(cursor.getString(FIELD_ID_PLAYER_START_TILE_Y));
     			levelData.add(cursor.getString(FIELD_ID_TILE_DATA));
         	}
+    		
     		cursor.close();
     	}
     	

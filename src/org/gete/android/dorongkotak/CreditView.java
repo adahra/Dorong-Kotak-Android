@@ -4,6 +4,11 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 
+/**
+ * Kelas yang digunakan untuk menampilkan layar tentang aplikasi
+ * @author Adnanto Ahmad Ramadhon
+ *
+ */
 public class CreditView extends Activity {
 	
 	@Override

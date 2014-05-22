@@ -4,6 +4,11 @@ import android.graphics.Canvas;
 import android.util.Log;
 import android.view.SurfaceHolder;
 
+/**
+ * Kelas yang digunakan untuk menangani proses kecil
+ * @author Adnanto Ahmad Ramadhon
+ *
+ */
 public class PanelThread extends Thread {
 	private SurfaceHolder surfaceHolder;
 	private DrawingPanel drawingPanel;

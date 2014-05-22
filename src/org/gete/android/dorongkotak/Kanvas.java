@@ -9,6 +9,11 @@ import android.util.AttributeSet;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
+/**
+ * Kelas yang digunakan untuk melakukan penggambaran dalam kanvas
+ * @author Adnanto Ahmad Ramadhon
+ *
+ */
 public class Kanvas extends SurfaceView {
 	public SurfaceHolder surfaceHolder;
 	public ThreadKanvas threadKanvas;
@@ -92,5 +97,5 @@ public class Kanvas extends SurfaceView {
 		canvas.drawColor(Color.BLACK);
 		canvas.drawBitmap(bitmap, x, y, null);
 	}
-
+	
 }

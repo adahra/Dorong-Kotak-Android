@@ -8,6 +8,11 @@ import android.os.Process;
 import android.util.Log;
 import android.view.View;
 
+/**
+ * Kelas yang digunakan untuk mengatur tampilan dari menu
+ * @author Adnanto Ahmad Ramadhon
+ *
+ */
 public class MenuView extends Activity {
 	private MediaPlayer mBackgroundMusic;
 	private Intent mIntent;
@@ -25,7 +30,7 @@ public class MenuView extends Activity {
 	}
 	
 	public void tampilGame(View view) {
-		mIntent = new Intent(MenuView.this, GameView.class);
+		mIntent = new Intent(MenuView.this, Play.class);
 		startActivity(mIntent);
 	}
 	

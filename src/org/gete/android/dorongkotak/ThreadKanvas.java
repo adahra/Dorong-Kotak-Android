@@ -3,6 +3,11 @@ package org.gete.android.dorongkotak;
 import android.annotation.SuppressLint;
 import android.graphics.Canvas;
 
+/**
+ * Kelas yang digunakan untuk menangani proses kecil
+ * @author Adnanto Ahmad Ramadhon
+ *
+ */
 public class ThreadKanvas extends Thread {
 	public Boolean isRunning = true;
 	public Kanvas kanvas;

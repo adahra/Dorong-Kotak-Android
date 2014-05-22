@@ -5,6 +5,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+/**
+ * Kelas yang digunakan untuk mengatur tampilan layar dari Splash
+ * @author Adnanto Ahmad Ramadhon
+ *
+ */
 public class SplashView extends Activity {
 	
 	@Override

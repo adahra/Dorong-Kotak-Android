@@ -15,9 +15,7 @@ import android.database.sqlite.SQLiteDatabase;
  * @author Dan Ruscoe (ruscoe.org)
  * @version 1.0
  */
-@SuppressLint("UseSparseArrays")
-public class GameTileData extends GameDAO
-{
+public class GameTileData extends GameDAO {
 	public static final String TABLE_NAME = "gameTileData";
 	
 	public static final String NAME = "name";
@@ -31,8 +29,7 @@ public class GameTileData extends GameDAO
 	public static final int FIELD_ID_DRAWABLE = 3;
 	public static final int FIELD_ID_VISIBLE = 4;
 
-	public GameTileData(Context ctx)
-	{
+	public GameTileData(Context ctx) {
 		super(ctx);
 	}
 
@@ -40,8 +37,8 @@ public class GameTileData extends GameDAO
 	 * Gets a map containing definitions for all available game tiles.
 	 * @return HashMap
 	 */
-	public HashMap<Integer, ArrayList<Integer>> getTilesData()
-	{
+	@SuppressLint("UseSparseArrays")
+	public HashMap<Integer, ArrayList<Integer>> getTilesData() {
     	SQLiteDatabase db = this.getReadableDatabase();
 
     	String[] from = { _ID, NAME, TYPE, DRAWABLE, VISIBLE };
@@ -49,10 +46,8 @@ public class GameTileData extends GameDAO
 
     	HashMap<Integer, ArrayList<Integer>> tiles = new HashMap<Integer, ArrayList<Integer>>();
 
-    	if (cursor != null)
-    	{
-    		while (cursor.moveToNext())
-        	{
+    	if (cursor != null) {
+    		while (cursor.moveToNext()) {
     			ArrayList<Integer> arrayList = new ArrayList<Integer>();
     			
     			arrayList.add(cursor.getInt(FIELD_ID_ID));
@@ -63,6 +58,7 @@ public class GameTileData extends GameDAO
 
     			tiles.put(cursor.getInt(FIELD_ID_ID), arrayList);
         	}
+    		
     		cursor.close();
     	}
 

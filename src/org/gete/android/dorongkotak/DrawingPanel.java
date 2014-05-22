@@ -11,6 +11,11 @@ import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
+/**
+ * Kelas yang digunakan untuk melakukan penggambaran
+ * @author Adnanto Ahmad Ramadhon
+ *
+ */
 public class DrawingPanel extends SurfaceView implements SurfaceHolder.Callback {
 	private PanelThread panelThread;
 	private Bitmap floor;
@@ -105,7 +110,6 @@ public class DrawingPanel extends SurfaceView implements SurfaceHolder.Callback 
 		}
 		
 		Log.d(TAG, "surfaceCreated(holder)");
-		
 	}
 
 	@Override
@@ -122,5 +126,5 @@ public class DrawingPanel extends SurfaceView implements SurfaceHolder.Callback 
 	public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
 		
 	}
-
+	
 }
