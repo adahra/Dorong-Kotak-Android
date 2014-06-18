@@ -93,7 +93,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
 	private GameUi mCtrlRightArrow = null;
 	
 	private Paint mUiTextPaint = null;
-	private String mLastStatusMessage = "";
+	// private String mLastStatusMessage = "";
 
 	/**
 	 * Templates defining all available game tiles.
@@ -246,7 +246,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
 			}
 
 			drawControls(canvas);
-			canvas.drawText(mLastStatusMessage, 30, 30, mUiTextPaint);
+			// canvas.drawText(mLastStatusMessage, 30, 30, mUiTextPaint);
 		}
 
 		/**
@@ -357,7 +357,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
 					handleExitTileCollision();
 					break;
 				default:
-					mLastStatusMessage = "Collision with regular tile";
+					// mLastStatusMessage = "Collision with regular tile";
 				}
 			}
 		}
@@ -367,7 +367,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
 		 * game tile.
 		 */
 		private void handleDangerousTileCollision() {
-			mLastStatusMessage = "Collision with dangerous tile";
+			// mLastStatusMessage = "Collision with dangerous tile";
 		}
 
 		/**
@@ -375,7 +375,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
 		 * game tile.
 		 */
 		private void handleExitTileCollision() {
-			mLastStatusMessage = "Collision with exit tile";
+			// mLastStatusMessage = "Collision with exit tile";
 		}
 	}
 
@@ -497,22 +497,22 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
 				
 				if (mCtrlUpArrow.getImpact(x, y)) {
 					Log.d("Dorong Kotak", "Pressed up arrow");
-					mLastStatusMessage = "Moving up";
+					// mLastStatusMessage = "Moving up";
 					mPlayerVerticalDirection = DIRECTION_UP;
 					mPlayerMoving = true;
 				} else if (mCtrlDownArrow.getImpact(x, y)) {
 					Log.d("Dorong Kotak", "Pressed down arrow");
-					mLastStatusMessage = "Moving down";
+					// mLastStatusMessage = "Moving down";
 					mPlayerVerticalDirection = DIRECTION_DOWN;
 					mPlayerMoving = true;
 				} else if (mCtrlLeftArrow.getImpact(x, y)) {
 					Log.d("Dorong Kotak", "Pressed left arrow");
-					mLastStatusMessage = "Moving left";
+					// mLastStatusMessage = "Moving left";
 					mPlayerHorizontalDirection = DIRECTION_LEFT;
 					mPlayerMoving = true;
 				} else if (mCtrlRightArrow.getImpact(x, y)) {
 					Log.d("Dorong Kotak", "Pressed right arrow");
-					mLastStatusMessage = "Moving right";
+					// mLastStatusMessage = "Moving right";
 					mPlayerHorizontalDirection = DIRECTION_RIGHT;
 					mPlayerMoving = true;
 				}
@@ -714,4 +714,5 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
 	private int getPixelValueForDensity(int pixels) {
 		return (int) (pixels * mScreenDensity);
 	}
+	
 }
