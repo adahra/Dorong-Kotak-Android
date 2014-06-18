@@ -2,6 +2,7 @@ package org.gete.android.dorongkotak;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -19,7 +20,7 @@ public class Play extends Activity {
 
 	private DisplayMetrics mMetrics = new DisplayMetrics();
 	private float mScreenDensity;
-
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -46,8 +47,11 @@ public class Play extends Activity {
 	    
 		Log.d("Dorong Kotak", "Starting game at stage: " + stage + ", level: " + level);
 		mGameView = new GameView(mContext, this, stage, level, mScreenDensity);
-
+		
 		setContentView(mGameView);
+		
+		PemutarSuara.muatSuara(mContext);
+		PemutarSuara.mainkanMusikDua();
 	}
 		
 	/**
@@ -56,7 +60,17 @@ public class Play extends Activity {
 	@Override
 	protected void onPause() {
 		super.onPause();
-
 		mGameView.getThread().setState(GameView.STATE_PAUSED); // pause game when Activity pauses
+		PemutarSuara.pauseMusikDua();
 	}
+	
+	@Override
+	public void onBackPressed() {
+    	PemutarSuara.hentikanMusikDua();
+    	mGameView.surfaceDestroyed(null);
+    	Intent intent = new Intent(Play.this, MenuView.class);
+    	Play.this.startActivity(intent);
+    	super.onBackPressed();
+	}
+	
 }
