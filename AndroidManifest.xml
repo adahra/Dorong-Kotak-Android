@@ -28,13 +28,13 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".MenuView" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:icon="@drawable/ic_launcher" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true">
+        <activity android:name="MenuView" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:icon="@drawable/ic_launcher" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true">
         </activity>
-        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name=".CreditView" android:icon="@drawable/ic_launcher" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true">
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="CreditView" android:icon="@drawable/ic_launcher" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true">
         </activity>
-        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name=".GameView" android:icon="@drawable/ic_launcher" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true">
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="GameView" android:icon="@drawable/ic_launcher" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true">
         </activity>
-        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name=".Play" android:icon="@drawable/ic_launcher" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true">
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="Play" android:icon="@drawable/ic_launcher" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true">
         </activity>
     </application>
 
