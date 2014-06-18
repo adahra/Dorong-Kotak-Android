@@ -2,7 +2,6 @@ package org.gete.android.dorongkotak;
 
 import android.content.Context;
 import android.media.MediaPlayer;
-import android.media.SoundPool;
 
 /**
  * Kelas yang digunakan untuk menangani suara
@@ -11,49 +10,59 @@ import android.media.SoundPool;
  *
  */
 public class PemutarSuara {
-	private static MediaPlayer mDeviceMoving;
-	private static MediaPlayer mMusik;
+	private static MediaPlayer mMusikSatu;
+	private static MediaPlayer mMusikDua;
 	private static boolean mSuaraAktif = true;
-	private static SoundPool mSuara;
+	// private static SoundPool mSuara;
 	
 	public static void muatSuara(Context context) {
-		mSuara = new SoundPool(4, 3, 0);
+		// mSuara = new SoundPool(4, 3, 0);
 		// mTombol = mSuara.load(context, R.id.tombol, 1);
-		// mMusik = MediaPlayer.create(context, resid);
-		mMusik.setLooping(true);
-		// mDeviceMoving = MediaPlayer.create(context, resid);
-		mDeviceMoving.setLooping(true);
+		mMusikSatu = MediaPlayer.create(context, R.raw.menuscreenmusic);
+		mMusikSatu.setLooping(true);
+		mMusikDua = MediaPlayer.create(context, R.raw.greippiardudar);
+		mMusikDua.setLooping(true);
 	}
 	
-	public static final void pauseDeviceMoving() {
-		if ((mSuaraAktif) && (mDeviceMoving.isPlaying())) mDeviceMoving.pause();
+	public static final void pauseMusikSatu() {
+		if ((mSuaraAktif) && (mMusikSatu.isPlaying())) mMusikSatu.pause();
 	}
 	
-	public static final void pauseMusik() {
-		if ((mSuaraAktif) && (mMusik.isPlaying())) mMusik.pause();
+	public static final void mainkanMusikSatu() {
+		if ((mSuaraAktif) && (!mMusikSatu.isPlaying())) {
+			mMusikSatu.seekTo(0);
+			mMusikSatu.start();
+		}
 	}
 	
-	public static void playButton() {
+	public static final void mainkanMusikDua() {
+		if ((mSuaraAktif) && (!mMusikDua.isPlaying())) {
+			mMusikDua.seekTo(0);
+			mMusikDua.start();
+		}
+	}
+	
+	public static final void pauseMusikDua() {
+		if ((mSuaraAktif) && (mMusikDua.isPlaying())) mMusikDua.pause();
+	}
+	
+	public static void musikTombol() {
 		// if ((mSuaraAktif) mSuara.play(mTombol, 1.0F, 1.0F, 1, 0, 1.0F);
 	}
 	
-	public static final void playDeviceMoving() {
-		if ((mSuaraAktif) && (!mDeviceMoving.isPlaying())) {
-			mDeviceMoving.seekTo(0);
-			mDeviceMoving.start();
+	public static final void hentikanMusikSatu() {
+		// if (mSuaraAktif) mSuara.release();
+		if ((mMusikSatu != null) && (mMusikSatu.isPlaying())) {
+			mMusikSatu.stop();
+			mMusikSatu.release();
 		}
 	}
 	
-	public static final void release() {
-		if (mSuaraAktif) mSuara.release();
-		if ((mMusik != null) && (mMusik.isPlaying())) {
-			mMusik.stop();
-			mMusik.release();
-		}
-		
-		if ((mDeviceMoving != null) && (mDeviceMoving.isPlaying())) {
-			mDeviceMoving.stop();
-			mDeviceMoving.release();
+	public static final void hentikanMusikDua() {
+		// if (mSuaraAktif) mSuara.release();
+		if ((mMusikDua != null) && (mMusikDua.isPlaying())) {
+			mMusikDua.stop();
+			mMusikDua.release();
 		}
 	}
 	
